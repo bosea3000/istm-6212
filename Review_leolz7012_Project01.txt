@@ -1,0 +1,32 @@
+Review Project 01
+ISTM-6212
+Reviewer: Akash Bose (git: bosea3000)
+
+PROBLEM 1:
+
+Part A:
+  Although, this is not the way I ran my code, this is a very neat of going about it. However, your grep command seems to first search for
+  all the words 1 letter or more and then searches that list for the desired words. You can directly search for the words using:
+  (Ex: grep -w -i -oE 'Jo')
+
+Part B:
+  Different from how I ran but we ended up with the same results. However, your command is redundant and you do not need the following:
+  " grep -oE '\w{{3,}}'| sort | uniq -c | sort -rn ". Simply searching for Rom. or Jul. and counting would yeild the same results.
+
+
+PROBLEM 2:
+
+Part A:
+  I did not think of solving the problem the way you did. Your approach was very nice and efficient. Sorting the list of starting / ending stations and
+  then piping it to get the unique counts and further sorting the count in reverse order. I really found this an interesting way!
+
+  But rather than having two commands "sort -rn | head -10", you can use one "tail -10"
+
+Part B:
+  Once again, it is great to see the way you approached the problem. I most certainly did not think of running it this way. Your approach is very interesting.
+  Again, I keep seeing that you run two commands: "sort -rn | head -10", instead you could finish that in one by simply running "tail-10"
+
+
+PROBLEM 3:
+  Good job on the filter problem! I could not get mine to work, I need to understand the coding behind the filter. I am glad to see your method of solving this.
+  I really would need to understand the filter concept before I make any comments on your code. 
